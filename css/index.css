@@ -197,7 +197,7 @@ footer {
   align-items: center;
 }
 .top-page {
-  width: 60%;
+  width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -207,7 +207,14 @@ footer {
   font-size: 3.5rem;
 }
 .home .intro img {
+  width: 800px;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -250,20 +257,26 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+  font-size: 1.6rem;
 }
 .home .walk .walk-text .btn {
   background: #22283A;
-  height: 30px;
+  height: 35px;
   width: 100px;
   border-radius: 5px;
-  font-size: 2.6rem;
   color: #F6F7F8;
+  text-align: center;
+  font-size: 1.7rem;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
+}
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
