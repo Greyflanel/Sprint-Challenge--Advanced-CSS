@@ -1,26 +1,30 @@
 // Home Content
 
 .top-page {
-  width: 1000px;
+  width: 1070px;
   margin: 0 auto;
   .top-page-flex;
-  
+
+  @media @phone {
+    diplay: flex;
+    flex-direction: column;
+  }
   h1 {
     font-size: 3.5rem;
   }
 }
 
 .home {
+  @media @phone {
+    width: 500px;
+    margin-left: 60px;
+    
+  }
   .intro {
     img {
       width: 800px;
       border-radius: 5px;
-    
-    @media(max-width: 500px) {
-      width: 90%;
-    margin: 0 auto;
     }
-  }
     h2 {
       padding: 15px;
     }
@@ -41,7 +45,18 @@
       border-radius: 20px;
       height: 100%;
     }
-  }
+
+      @media @phone {
+      flex-direction: column;
+     
+     }
+     .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+     }
+    }
+  
 
   .visit-planets {
     padding: 15px;
@@ -73,36 +88,33 @@
         margin-bottom: 26px;
         font-size: 1.6rem;
       }
-.btn {
-      .custom-btn(@btn-bg-color, 35px, 100px, 5px);
-      
-         
+      .btn {
+        .custom-btn(@btn-bg-color, 35px, 100px, 5px);
+
+        .p1 {
           color: @porcelain;
+          font-size: 1.6rem;
           text-align: center;
           font-size: 1.7rem;
-         
-        &:hover {
-          background: @porcelain;
-          color: @btn-bg-color;
-          
+
+          &:hover {
+            background: @porcelain;
+            color: @btn-bg-color;
           }
         }
-        
+      }
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%; 
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
       }
     }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      
-      }
-    }
-  
-  
-
+  }
 } // home
+// Answer the Questions!!!!
