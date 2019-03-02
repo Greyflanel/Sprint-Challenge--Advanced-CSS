@@ -1,6 +1,6 @@
 .nav-font-class {
   text-decoration: none;
-  color: #454A59;
+  color: #454a59;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -130,7 +130,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -145,16 +145,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -175,19 +175,24 @@ nav {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
-  background: #F6F6F6;
-  border-color: #F1F1F1;
+  background: #f6f6f6;
+  border-color: #f1f1f1;
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 50%;
+  }
 }
 nav a {
   text-decoration: none;
-  color: #454A59;
+  color: #454a59;
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -254,7 +259,7 @@ footer {
     display: flex;
     align-content: flex-start;
     flex-direction: column;
-    width: 200%;
+    width: 225%;
     padding-left: 110px;
   }
 }
@@ -290,7 +295,7 @@ footer {
   .home .visit-planets p {
     width: 60%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
 }
 .home .walk {
@@ -301,18 +306,17 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    width: 65%;
+    height: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 100px;
   }
-}
-.home .walk .walk-text {
-  width: 100%;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    text-align: left;
   }
 }
 .home .walk .walk-text h3 {
@@ -323,32 +327,37 @@ footer {
   font-size: 1.6rem;
 }
 .home .walk .walk-text .btn {
-  background: #22283A;
+  background: #22283a;
   height: 35px;
   width: 100px;
   border-radius: 5px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    background: #22283A;
+    background: #22283a;
     height: 50px;
     width: 450px;
     border-radius: 5px;
   }
 }
 .home .walk .walk-text .btn .p1 {
-  color: #F6F7F8;
+  color: #f6f7f8;
   font-size: 1.6rem;
   text-align: center;
   font-size: 1.7rem;
 }
 .home .walk .walk-text .btn .p1:hover {
-  background: #F6F7F8;
-  color: #22283A;
+  background: #f6f7f8;
+  color: #22283a;
 }
-.home .walk .walk-text .walk-img {
+.home .walk .walk-text .btn .walk-img {
   width: 100%;
   margin-left: 4%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn .walk-img {
+    width: 100%;
+  }
 }
