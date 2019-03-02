@@ -205,8 +205,8 @@ footer {
 }
 @media (max-width: 500px) {
   .top-page {
-    diplay: flex;
-    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
   }
 }
 .top-page h1 {
@@ -214,12 +214,17 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    width: 500px;
-    margin-left: 60px;
+    width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 .home .intro img {
-  width: 800px;
+  width: 100%;
   border-radius: 5px;
 }
 .home .intro h2 {
@@ -231,7 +236,12 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    width: 50%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -241,7 +251,11 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images {
+    display: flex;
+    align-content: flex-start;
     flex-direction: column;
+    width: 200%;
+    padding-left: 110px;
   }
 }
 @media (max-width: 500px) {
@@ -253,21 +267,53 @@ footer {
 .home .visit-planets {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    width: 85%;
+  }
+}
 .home .visit-planets h3 {
   margin-top: 11px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .home .walk {
+  display: flex;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 65%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
-  width: 50%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -282,6 +328,14 @@ footer {
   width: 100px;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: #22283A;
+    height: 50px;
+    width: 450px;
+    border-radius: 5px;
+  }
+}
 .home .walk .walk-text .btn .p1 {
   color: #F6F7F8;
   font-size: 1.6rem;
@@ -293,11 +347,8 @@ footer {
   color: #22283A;
 }
 .home .walk .walk-text .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.home .walk .walk-text .walk-img img {
   width: 100%;
+  margin-left: 4%;
   height: auto;
   border-radius: 10px;
 }
