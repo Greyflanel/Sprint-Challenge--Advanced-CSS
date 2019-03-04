@@ -1,1 +1,22 @@
 // Mixins Here
+.nav-font-class {
+  text-decoration: none;
+  color: @nav-font;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.top-page-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// Parametric Mix-In
+// .btn-style {
+
+.custom-btn(@button-bg-color, @btn-height, @btn-width, @border-rad) {
+  background: @button-bg-color;
+  height: @btn-height;
+  width: @btn-width;
+  border-radius: @border-rad;
+}
